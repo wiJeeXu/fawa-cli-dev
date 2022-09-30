@@ -1,6 +1,6 @@
 {
   "name": "@fawa-cli-dev/utils",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "fawa-cli-dev utils",
   "author": "xuweijie <18751297674@163.com>",
   "homepage": "",
@@ -14,10 +14,11 @@
     "lib"
   ],
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "test": "node ./__tests__/utils.test.js"
   },
-  "gitHead": "9ff878f0b41d68dc914a9fec3270047f5d90c3a2"
+  "gitHead": "874425343609b14929cedf4b2ada14c8a9e72504"
 }
