@@ -1,0 +1,113 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '5.5.4',
+0 silly argv   '$0': 'lerna'
+0 silly argv }
+1 notice cli v5.5.4
+2 verbose rootPath /Users/apple/Desktop/fawa-cli-dev/fawa-cli-dev
+3 verbose session 8a1f8d0d195708a2
+4 verbose user-agent lerna/5.5.4/node@v14.18.2+x64 (darwin)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '5.5.4' }
+6 verbose rootPath /Users/apple/Desktop/fawa-cli-dev/fawa-cli-dev
+7 info current version 1.0.2
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v1.0.2-1-g199791d" => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"1","sha":"199791d","isDirty":false}
+18 info Looking for changed packages since v1.0.2
+19 silly checking diff packages/core
+20 silly found diff in packages/core/package.json
+21 verbose filtered diff [ 'packages/core/package.json' ]
+22 silly checking diff packages/utils
+23 silly found diff in packages/utils/package.json
+24 verbose filtered diff [ 'packages/utils/package.json' ]
+25 verbose updated @fawa-cli-dev/core
+26 verbose updated @fawa-cli-dev/utils
+27 verbose git-describe undefined => "v1.0.2-1-g199791d"
+28 silly git-describe parsed => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"1","sha":"199791d","isDirty":false}
+29 info execute Skipping releases
+30 silly lifecycle No script for "preversion" in "fawa-cli-dev", continuing
+31 silly lifecycle No script for "preversion" in "@fawa-cli-dev/utils", continuing
+32 verbose version @fawa-cli-dev/utils has no lockfile. Skipping lockfile update.
+33 silly lifecycle No script for "version" in "@fawa-cli-dev/utils", continuing
+34 silly lifecycle No script for "preversion" in "@fawa-cli-dev/core", continuing
+35 verbose version @fawa-cli-dev/core has no lockfile. Skipping lockfile update.
+36 silly lifecycle No script for "version" in "@fawa-cli-dev/core", continuing
+37 silly lifecycle No script for "version" in "fawa-cli-dev", continuing
+38 silly gitAdd [
+38 silly gitAdd   'packages/utils/package.json',
+38 silly gitAdd   'packages/core/package.json',
+38 silly gitAdd   'lerna.json'
+38 silly gitAdd ]
+39 silly gitCommit v1.0.3
+40 verbose git [ 'commit', '-m', 'v1.0.3' ]
+41 silly gitTag v1.0.3
+42 verbose git [ 'tag', 'v1.0.3', '-m', 'v1.0.3' ]
+43 silly lifecycle No script for "postversion" in "@fawa-cli-dev/core", continuing
+44 silly lifecycle No script for "postversion" in "@fawa-cli-dev/utils", continuing
+45 silly lifecycle No script for "postversion" in "fawa-cli-dev", continuing
+46 info git Pushing tags...
+47 silly gitPush origin master
+48 info publish Publishing packages to npm...
+49 warn ENOLICENSE Packages @fawa-cli-dev/core and @fawa-cli-dev/utils are missing a license.
+49 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+49 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+50 silly getCurrentSHA
+51 verbose getCurrentSHA 9ff878f0b41d68dc914a9fec3270047f5d90c3a2
+52 silly lifecycle No script for "prepublish" in "fawa-cli-dev", continuing
+53 silly lifecycle No script for "prepare" in "fawa-cli-dev", continuing
+54 silly lifecycle No script for "prepublishOnly" in "fawa-cli-dev", continuing
+55 silly lifecycle No script for "prepack" in "fawa-cli-dev", continuing
+56 verbose pack-directory packages/utils
+57 silly lifecycle No script for "prepublish" in "@fawa-cli-dev/utils", continuing
+58 silly lifecycle No script for "prepare" in "@fawa-cli-dev/utils", continuing
+59 silly lifecycle No script for "prepublishOnly" in "@fawa-cli-dev/utils", continuing
+60 silly lifecycle No script for "prepack" in "@fawa-cli-dev/utils", continuing
+61 silly lifecycle No script for "postpack" in "@fawa-cli-dev/utils", continuing
+62 verbose packed packages/utils
+63 verbose pack-directory packages/core
+64 silly lifecycle No script for "prepublish" in "@fawa-cli-dev/core", continuing
+65 silly lifecycle No script for "prepare" in "@fawa-cli-dev/core", continuing
+66 silly lifecycle No script for "prepublishOnly" in "@fawa-cli-dev/core", continuing
+67 silly lifecycle No script for "prepack" in "@fawa-cli-dev/core", continuing
+68 silly lifecycle No script for "postpack" in "@fawa-cli-dev/core", continuing
+69 verbose packed packages/core
+70 silly lifecycle No script for "postpack" in "fawa-cli-dev", continuing
+71 verbose publish @fawa-cli-dev/utils
+72 silly FetchError: request to https://registry.npm.taobao.org/@fawa-cli-dev%2futils failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+72 silly     at ClientRequest.<anonymous> (/Users/apple/.nvm/versions/node/v14.18.2/lib/node_modules/lerna/node_modules/_minipass-fetch@2.1.2@minipass-fetch/lib/index.js:130:14)
+72 silly     at ClientRequest.emit (events.js:400:28)
+72 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+72 silly     at TLSSocket.emit (events.js:412:35)
+72 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+72 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+72 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+72 silly  FetchError: request to https://registry.npm.taobao.org/@fawa-cli-dev%2futils failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+72 silly     at ClientRequest.<anonymous> (/Users/apple/.nvm/versions/node/v14.18.2/lib/node_modules/lerna/node_modules/_minipass-fetch@2.1.2@minipass-fetch/lib/index.js:130:14)
+72 silly     at ClientRequest.emit (events.js:400:28)
+72 silly     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+72 silly     at TLSSocket.emit (events.js:412:35)
+72 silly     at emitErrorNT (internal/streams/destroy.js:106:8)
+72 silly     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+72 silly     at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+72 silly   code: 'ENOTFOUND',
+72 silly   errno: 'ENOTFOUND',
+72 silly   syscall: 'getaddrinfo',
+72 silly   hostname: 'registry.npm.taobao.org',
+72 silly   type: 'system'
+72 silly }
+73 error ENOTFOUND request to https://registry.npm.taobao.org/@fawa-cli-dev%2futils failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+74 error FetchError: request to https://registry.npm.taobao.org/@fawa-cli-dev%2futils failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+74 error     at ClientRequest.<anonymous> (/Users/apple/.nvm/versions/node/v14.18.2/lib/node_modules/lerna/node_modules/_minipass-fetch@2.1.2@minipass-fetch/lib/index.js:130:14)
+74 error     at ClientRequest.emit (events.js:400:28)
+74 error     at TLSSocket.socketErrorListener (_http_client.js:475:9)
+74 error     at TLSSocket.emit (events.js:412:35)
+74 error     at emitErrorNT (internal/streams/destroy.js:106:8)
+74 error     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
