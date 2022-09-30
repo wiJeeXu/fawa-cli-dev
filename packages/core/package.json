@@ -25,5 +25,6 @@
   },
   "dependencies": {
     "@fawa-cli-dev/utils": "^1.0.2"
-  }
+  },
+  "gitHead": "b95883c4347ad970c40ac0947ed2f2ef0427d3bb"
 }
