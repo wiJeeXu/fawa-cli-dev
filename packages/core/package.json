@@ -1,6 +1,6 @@
 {
   "name": "@fawa-cli-dev/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "keywords": [
     "fawa-cli-dev",
@@ -24,7 +24,7 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@fawa-cli-dev/utils": "^1.0.3"
+    "@fawa-cli-dev/utils": "^1.0.4"
   },
   "gitHead": "9ff878f0b41d68dc914a9fec3270047f5d90c3a2"
 }
