@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "packages/*"
+    "core/*",
+    "models/*",
+    "commands/*",
+    "utils/*"
   ]
 }
